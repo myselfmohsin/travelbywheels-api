@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>org.travelbywheels.rest.common.entities.LkCity</class>
+        <class>org.travelbywheels.rest.common.entities.LkCountry</class>
+        <class>org.travelbywheels.rest.common.entities.LkFeature</class>
+        <class>org.travelbywheels.rest.common.entities.LkJourneyStatus</class>
+        <class>org.travelbywheels.rest.common.entities.LkQuoteStatus</class>
+        <class>org.travelbywheels.rest.common.entities.LkReviewCategory</class>
+        <class>org.travelbywheels.rest.common.entities.LkState</class>
+        <class>org.travelbywheels.rest.common.entities.Address</class>
+        <class>org.travelbywheels.rest.common.entities.AgencyUser</class>
+        <class>org.travelbywheels.rest.common.entities.Driver</class>
+        <class>org.travelbywheels.rest.common.entities.Journey</class>
+        <class>org.travelbywheels.rest.common.entities.MessageLog</class>
+        <class>org.travelbywheels.rest.common.entities.PersonAddress</class>
+        <class>org.travelbywheels.rest.common.entities.Quote</class>
+        <class>org.travelbywheels.rest.common.entities.ReviewAboutTravelAgency</class>
+        <class>org.travelbywheels.rest.common.entities.ReviewAboutUser</class>
+        <class>org.travelbywheels.rest.common.entities.TravelAgency</class>
+        <class>org.travelbywheels.rest.common.entities.TravelAgencyRating</class>
+        <class>org.travelbywheels.rest.common.entities.Vehicle</class>
+        <class>org.travelbywheels.rest.common.entities.VehicleFeature</class>
+        <class>org.travelbywheels.rest.common.entities.VehiclePhoto</class>
+        <class>org.travelbywheels.rest.common.entities.Person</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/travelbywheels"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
